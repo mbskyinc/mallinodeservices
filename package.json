@@ -1,0 +1,32 @@
+{
+  "name": "mallinodeservices",
+  "version": "1.0.0",
+  "description": "(RESTful mallinodeservices)",
+  "main": "index.js",
+  "scripts": {
+    "test": "no test specified",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbskyinc/mallinodeservices.git"
+  },
+  "keywords": [
+    "MalliRESTful"
+  ],
+  "author": "Malli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbskyinc/mallinodeservices/issues"
+  },
+  "homepage": "https://github.com/mbskyinc/mallinodeservices#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.3"
+  }
+}
