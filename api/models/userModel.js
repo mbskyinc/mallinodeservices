@@ -5,17 +5,14 @@ var Schema = mongoose.Schema;
 
 var UserSchema = new Schema({
   username: {
-    type: String,
-    required: 'Enter username'
+    type: String, required: 'Enter username', unique : true, dropDups: true
   },
   created_date: {
-    type: Date,
-    default: Date.now
+    type: Date, default: Date.now
   },
   password: {
-    type: String,
-    required: 'Enter password'
+    type: String, required: 'Enter password'
   }
 });
 
-module.exports = mongoose.model('Users', UserSchema);
+module.exports = mongoose.model('Users', UserSchema).init();
