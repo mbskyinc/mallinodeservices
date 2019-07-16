@@ -4,7 +4,7 @@
   "description": "(RESTful mallinodeservices)",
   "main": "index.js",
   "scripts": {
-    "test": "no test specified",
+    "test": "mocha",
     "start": "nodemon server.js"
   },
   "repository": {
@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/mbskyinc/mallinodeservices#readme",
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.1.4",
     "nodemon": "^1.19.1"
   },
   "dependencies": {
