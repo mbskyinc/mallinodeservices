@@ -11,7 +11,11 @@ module.exports = mongoose.model('Question', questionSchema).init();
 
 var questionSetSchema = new Schema({
   setname: {type: String, required: 'setname is required'},
-  questions: [questionSchema]
+  questions: [questionSchema],
+  section:{
+    type: Schema.Types.ObjectId,
+    ref: 'Sections'
+  }
   });
   
   module.exports = mongoose.model('QuestionSets', questionSetSchema).init();
