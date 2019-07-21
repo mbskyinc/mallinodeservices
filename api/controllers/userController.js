@@ -13,7 +13,7 @@ exports.list_all_users = function(req, res) {
 };
 
 exports.create_a_user = function(req, res) {
-  User.init();
+ // User.init();
   var new_user = new User(req.body);
   if(new_user.password){
 	const salt = bcrypt.genSaltSync();
