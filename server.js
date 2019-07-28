@@ -7,6 +7,7 @@ var express = require('express'),
   Task1 = require('./api/models/userModel'), //created model loading here
   Task2 = require('./api/models/sectionModel'),
   Task3 = require('./api/models/questionSetModel'),
+  Task4 = require('./api/models/practiceModel'),
   bodyParser = require('body-parser');
   
 // mongoose instance connection url connection
@@ -27,6 +28,8 @@ section_routes(app); //register the route
 var questionSet_routes = require('./api/routes/questionSetRoutes'); //importing route
 questionSet_routes(app); //register the route
 
+var practice_routes = require('./api/routes/practiceRoutes'); //importing route
+practice_routes(app); //register the route
 
 app.listen(port);
 
